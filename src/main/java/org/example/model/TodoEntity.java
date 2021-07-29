@@ -13,7 +13,7 @@ import javax.persistence.*;
  * ex) TodoEntity todo = new TodoEntity();
  * */
 @NoArgsConstructor //파라미터가 없는 기본 생서자를 생성
-
+//git commit test
 /*
 * ex) TodoEntity todo = new TodoEntity(1, "테스트 title", 1, true);
 * */
