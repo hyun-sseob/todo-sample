@@ -21,6 +21,11 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.web.server.ResponseStatusException;
 
+/*
+* @RunWith(MockitoJUnitRunner.class) JUnit4 전용
+* */
+
+//Mock객체를 사용하기위한 Annotation(JUnit5 전용)
 @ExtendWith(MockitoExtension.class)
 public class TodoServiceTest {
 
@@ -70,5 +75,13 @@ public class TodoServiceTest {
         assertThrows(ResponseStatusException.class, () -> {
             this.todoService.searchById(123L);
         });
+    }
+
+    @Test
+    void testAdd() {
+    }
+
+    @Test
+    void testSearchById() {
     }
 }
